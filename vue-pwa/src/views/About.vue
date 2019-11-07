@@ -3,7 +3,7 @@
     <router-link to="/" class="singleLink ">
       <h1>Home</h1>
     </router-link>
-    <h1>This is an about page</h1>
+    <v-btn text small color="primary">Primary</v-btn>
   </div>
 </template>
 
