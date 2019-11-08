@@ -1,9 +1,17 @@
 <template>
   <div class="about">
-    <router-link to="/" class="singleLink ">
-      <h1>Home</h1>
+    <router-link to="/" class="my-2">
+      <v-btn depressed >Back</v-btn>
     </router-link>
-    <v-btn text small color="primary">Primary</v-btn>
+    <div class="about__info">
+      What it is
+    </div>
+    <div class="about__info about__info--colored">
+      How it works
+    </div>
+    <div class="about__info">
+      What to do
+    </div>
   </div>
 </template>
 

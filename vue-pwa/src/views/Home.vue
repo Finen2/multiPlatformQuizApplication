@@ -1,11 +1,17 @@
 <template>
-  <div class="home">
-    <router-link to="/about" class="singleLink ">
-      <h1>About</h1>
-    </router-link>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-row align="center" class="flex-center-evenly-column home">
+    <v-col class="text-center" cols="12" sm="4">
+      <router-link to="/mode" class="my-2">
+        <v-btn depressed>Play</v-btn>
+      </router-link>
+      <router-link to="/about" class="my-2">
+        <v-btn depressed >About</v-btn>
+      </router-link>
+      <router-link to="/settings" class="my-2">
+        <v-btn depressed >Settings</v-btn>
+      </router-link>
+    </v-col>
+  </v-row>
 </template>
 
 <script lang="ts" src="./Home.ts"></script>
