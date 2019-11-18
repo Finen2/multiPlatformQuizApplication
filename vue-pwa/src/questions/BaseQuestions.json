@@ -1,0 +1,43 @@
+// JSON with base questions for the application
+{
+  "kid": {
+    "questions":[
+      {"id": 11, "header": "Title", "body": "question" },
+      {"id": 12, "header": "Title", "body": "question" },
+      {"id": 13, "header": "Title", "body": "question" },
+    ],
+    "age": "7-13"
+  },
+  "teen": {
+    "questions":[
+      {"id": 21, "header": "Title", "body": "question" },
+      {"id": 22, "header": "Title", "body": "question" },
+      {"id": 23, "header": "Title", "body": "question" },
+    ],
+    "age": "13-19"
+  },
+  "adult": {
+    "questions":[
+      {"id": 31, "header": "Title", "body": "question" },
+      {"id": 32, "header": "Title", "body": "question" },
+      {"id": 33, "header": "Title", "body": "question" },
+    ],
+    "age": "19-99"
+  },
+  "family": {
+    "questions":[
+      {"id": 41, "header": "Title", "body": "question" },
+      {"id": 42, "header": "Title", "body": "question" },
+      {"id": 43, "header": "Title", "body": "question" },
+    ],
+    "age": "7-99"
+  },
+  "special": {
+    "questions": [
+      {"id": 51, "header": "Title", "body": "question" },
+      {"id": 52, "header": "Title", "body": "question" },
+      {"id": 53, "header": "Title", "body": "question" },
+    ],
+    "age": "-"
+  }
+}
