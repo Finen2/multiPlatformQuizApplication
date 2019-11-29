@@ -1,4 +1,8 @@
 // Own writen questions
 
 
-//post questions
+// post questions
+
+export function writeQuestions() {
+  console.log('jfkls')
+};

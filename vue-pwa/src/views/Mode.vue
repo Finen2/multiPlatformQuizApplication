@@ -4,21 +4,21 @@
       <v-btn depressed >Back</v-btn>
     </router-link>
     <v-col class="text-center" cols="12" sm="4">
-      <div class="my-2">
+      <router-link to="/gameView" class="my-2">
         <v-btn depressed large>Kids</v-btn>
-      </div>
-      <div class="my-2">
+      </router-link>
+      <router-link to="/gameView" class="my-2">
         <v-btn depressed large>Teens</v-btn>
-      </div>
-      <div class="my-2">
+      </router-link>
+      <router-link to="/gameView" class="my-2">
         <v-btn depressed large>Adults</v-btn>
-      </div>
-      <div class="my-2">
+      </router-link>
+      <router-link to="/gameView" class="my-2">
         <v-btn depressed large>Family</v-btn>
-      </div>
-      <div class="my-2">
+      </router-link>
+      <router-link to="/gameView" class="my-2">
         <v-btn depressed large>All questions</v-btn>
-      </div>
+      </router-link>
     </v-col>
   </v-row>
 </template>

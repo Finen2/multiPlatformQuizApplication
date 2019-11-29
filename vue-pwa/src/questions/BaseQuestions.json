@@ -1,43 +1,37 @@
-// JSON with base questions for the application
 {
-  "kid": {
-    "questions":[
-      {"id": 11, "header": "Title", "body": "question" },
-      {"id": 12, "header": "Title", "body": "question" },
-      {"id": 13, "header": "Title", "body": "question" },
+  "kids" : {
+    "questions" : [
+      {"id": 11, "categorys": "testcategory", "header": "Title", "body": "questions1"},
+      {"id": 12, "categorys": "testcategory", "header": "Title", "body": "questions2"}
     ],
-    "age": "7-13"
+    "age" : "7-13"
   },
-  "teen": {
-    "questions":[
-      {"id": 21, "header": "Title", "body": "question" },
-      {"id": 22, "header": "Title", "body": "question" },
-      {"id": 23, "header": "Title", "body": "question" },
+  "teens" : {
+    "questions" : [
+      {"id": 21, "categorys": "testcategory", "header": "Title", "body": "questions1"},
+      {"id": 22, "categorys": "testcategory", "header": "Title", "body": "questions2"}
     ],
-    "age": "13-19"
+    "age" : "13-19"
   },
-  "adult": {
-    "questions":[
-      {"id": 31, "header": "Title", "body": "question" },
-      {"id": 32, "header": "Title", "body": "question" },
-      {"id": 33, "header": "Title", "body": "question" },
+  "adults" : {
+    "questions" : [
+      {"id": 31, "categorys": "testcategory", "header": "Title", "body": "questions1"},
+      {"id": 32, "categorys": "testcategory", "header": "Title", "body": "questions2"}
     ],
-    "age": "19-99"
+    "age" : "19-99"
   },
-  "family": {
-    "questions":[
-      {"id": 41, "header": "Title", "body": "question" },
-      {"id": 42, "header": "Title", "body": "question" },
-      {"id": 43, "header": "Title", "body": "question" },
+  "family" : {
+    "questions" : [
+      {"id": 41, "categorys": "testcategory", "header": "Title", "body": "questions1"},
+      {"id": 42, "categorys": "testcategory", "header": "Title", "body": "questions2"}
     ],
-    "age": "7-99"
+    "age" : "7-99"
   },
-  "special": {
-    "questions": [
-      {"id": 51, "header": "Title", "body": "question" },
-      {"id": 52, "header": "Title", "body": "question" },
-      {"id": 53, "header": "Title", "body": "question" },
+  "special" : {
+    "questions" : [
+      {"id": 51, "categorys": "testcategory", "header": "Title", "body": "questions1"},
+      {"id": 52, "categorys": "testcategory", "header": "Title", "body": "questions2"}
     ],
-    "age": "-"
+    "age" : "-"
   }
 }
