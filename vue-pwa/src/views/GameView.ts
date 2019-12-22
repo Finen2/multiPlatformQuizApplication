@@ -15,10 +15,12 @@ export default {
       this.shownQuestion = this.question.kids.questions[Math.floor(Math.random() * this.question.kids.questions.length)].body
     },
     handleConnectivityChange(this: any, status: any){
-      console.log(status)
       this.question = localQuestions()
-      console.log(this.question)
-      // add if statment that takes status and adds online questions to expand functionality
+      if (status === true) {
+          console.log('This device is online')
+      }else{
+        console.log('this device is not online')
+      }
     }
   },
 };
