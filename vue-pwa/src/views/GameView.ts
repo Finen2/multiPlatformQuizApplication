@@ -12,14 +12,16 @@ export default {
   },
   methods: {
     nextQuestion(this: any){
-      this.shownQuestion = this.question.kids.questions[Math.floor(Math.random() * this.question.kids.questions.length)].body
+      const myArray = this.question.kids
+      this.shownQuestion = myArray.questions[Math.floor(Math.random() * myArray.questions.length)].body
     },
-    handleConnectivityChange(this: any, status: any){
-      this.question = localQuestions()
+    async handleConnectivityChange(this: any, status: boolean){
       if (status === true) {
-          console.log('This device is online')
+          this.question = await localQuestions()
+          console.log(status)
       }else{
-        console.log('this device is not online')
+        this.question = await localQuestions()
+        console.log(status)
       }
     }
   },
