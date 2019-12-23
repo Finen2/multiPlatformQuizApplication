@@ -1,28 +1,30 @@
 import { localQuestions } from '@/questions/GetQuestions';
+import { checkConnection } from '@/network/CheckConnection';
 import offline from 'v-offline';
 
 export default {
   name: 'gameView',
   data: () => ({
     question: {},
-    shownQuestion: ''
+    shownQuestion: '',
   }),
   components: {
-    offline
+    offline,
   },
   methods: {
-    nextQuestion(this: any){
-      const myArray = this.question.kids
-      this.shownQuestion = myArray.questions[Math.floor(Math.random() * myArray.questions.length)].body
+    nextQuestion(this: any) {
+      const myArray = this.question.kids;
+      this.shownQuestion = myArray.questions[Math.floor(Math.random() * myArray.questions.length)].body;
     },
-    async handleConnectivityChange(this: any, status: boolean){
+    handleConnectivityChange(this: any, status: boolean) {
       if (status === true) {
-          this.question = await localQuestions()
-          console.log(status)
-      }else{
-        this.question = await localQuestions()
-        console.log(status)
+          this.question = localQuestions();
+      } else {
+        this.question = localQuestions();
       }
-    }
+    },
+  },
+  created(this: any) {
+    this.handleConnectivityChange(checkConnection());
   },
 };

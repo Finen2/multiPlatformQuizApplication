@@ -9,7 +9,7 @@
     <div slot="offline">
       {{ shownQuestion }}
       <v-btn depressed v-on:click="nextQuestion">New questions</v-btn>
-      ...
+      ..jfksfjdslfjskld.
     </div>
   </offline>
 </template>
