@@ -4,5 +4,5 @@
 // post questions
 
 export function writeQuestions() {
-  console.log('jfkls')
-};
+  console.log('jfkls');
+}

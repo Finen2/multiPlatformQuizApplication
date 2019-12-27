@@ -18,7 +18,7 @@ export default {
     },
     handleConnectivityChange(this: any, status: boolean) {
       if (status === true) {
-          this.question = localQuestions();
+        this.question = localQuestions();
       } else {
         this.question = localQuestions();
       }
