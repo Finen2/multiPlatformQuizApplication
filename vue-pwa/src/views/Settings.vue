@@ -6,6 +6,7 @@
     <v-col class="text-center" cols="12" sm="4">
       <div class="my-2">
         <v-btn depressed large>Get Q:s</v-btn>
+        <Login />
       </div>
       <div class="my-2">
         <v-btn depressed large>Write Q:s</v-btn>

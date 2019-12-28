@@ -17,6 +17,33 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '@/views/GameView.vue'),
+    children: [
+      {
+        path: '/kids',
+        name: 'kids',
+        component: () => import('@/views/gameViewPages/Kids.vue'),
+      },
+      {
+        path: '/teens',
+        name: 'teens',
+        component: () => import('@/views/gameViewPages/Teens.vue'),
+      },
+      {
+        path: '/adults',
+        name: 'adults',
+        component: () => import('@/views/gameViewPages/Adults.vue'),
+      },
+      {
+        path: '/family',
+        name: 'family',
+        component: () => import('@/views/gameViewPages/Family.vue'),
+      },
+      {
+        path: '/special',
+        name: 'special',
+        component: () => import('@/views/gameViewPages/Special.vue'),
+      },
+    ],
   },
   {
     path: '/mode',
@@ -31,18 +58,18 @@ const routes = [
       {
         path: '/writeQuestions',
         name: 'writeQuestions',
-        component: () => import('@/views/settingsViews/WriteQuestions.vue'),
+        component: () => import('@/views/settingsPages/WriteQuestions.vue'),
       },
-      // {
-      //   path: '/getQuestions',
-      //   name: 'getQuestions',
-      //   component: () => import('@/views/settingsViews/GetQuestions.vue'),
-      // },
-      // {
-      //   path: '/chooseQuestions',
-      //   name: 'chooseQuestions',
-      //   component: () => import('@/views/settingsViews/ChooseQuestions.vue'),
-      // },
+      {
+        path: '/getQuestions',
+        name: 'getQuestions',
+        component: () => import('@/views/settingsPages/GetQuestions.vue'),
+      },
+      {
+        path: '/chooseQuestions',
+        name: 'chooseQuestions',
+        component: () => import('@/views/settingsPages/ChooseQuestions.vue'),
+      },
     ],
   },
   {
