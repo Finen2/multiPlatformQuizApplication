@@ -1,6 +1,6 @@
-import { localQuestions } from '@/questions/GetQuestions';
+import { localQuestions, onlineQuestionsKids } from '@/questions/GetQuestions';
 import { checkConnection } from '@/network/CheckConnection';
-import offline from 'v-offline';
+//import offline from 'v-offline'; //Dosent work with route children
 
 export default {
   name: 'gameView',
@@ -9,7 +9,7 @@ export default {
     shownQuestion: '',
   }),
   components: {
-    offline,
+    //offline,
   },
   methods: {
     nextQuestion(this: any) {
@@ -26,5 +26,6 @@ export default {
   },
   created(this: any) {
     this.handleConnectivityChange(checkConnection());
+    onlineQuestionsKids()
   },
 };

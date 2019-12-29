@@ -13,10 +13,7 @@ const routes = [
   {
     path: '/gameView',
     name: 'gameView',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '@/views/GameView.vue'),
+    component: () => import('@/views/GameView.vue'),
     children: [
       {
         path: '/kids',
@@ -54,23 +51,23 @@ const routes = [
     path: '/settings',
     name: 'settings',
     component: () => import('@/views/Settings.vue'),
-    children: [
-      {
-        path: '/writeQuestions',
-        name: 'writeQuestions',
-        component: () => import('@/views/settingsPages/WriteQuestions.vue'),
-      },
-      {
-        path: '/getQuestions',
-        name: 'getQuestions',
-        component: () => import('@/views/settingsPages/GetQuestions.vue'),
-      },
-      {
-        path: '/chooseQuestions',
-        name: 'chooseQuestions',
-        component: () => import('@/views/settingsPages/ChooseQuestions.vue'),
-      },
-    ],
+    // children: [
+    //   {
+    //     path: '/writeQuestions',
+    //     name: 'writeQuestions',
+    //     component: () => import('@/views/settingsPages/WriteQuestions.vue'),
+    //   },
+    //   {
+    //     path: '/getQuestions',
+    //     name: 'getQuestions',
+    //     component: () => import('@/views/settingsPages/GetQuestions.vue'),
+    //   },
+    //   // {
+    //   //   path: '/chooseQuestions',
+    //   //   name: 'chooseQuestions',
+    //   //   component: () => import('@/views/settingsPages/ChooseQuestions.vue'),
+    //   // },
+    // ],
   },
   {
     path: '/about',
