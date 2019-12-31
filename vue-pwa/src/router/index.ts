@@ -40,6 +40,11 @@ const routes = [
         name: 'special',
         component: () => import('@/views/gameViewPages/Special.vue'),
       },
+      {
+        path: '/allQuestions',
+        name: 'allQuestions',
+        component: () => import('@/views/gameViewPages/AllQuestions.vue'),
+      },
     ],
   },
   {
