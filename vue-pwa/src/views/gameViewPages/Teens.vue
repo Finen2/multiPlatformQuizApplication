@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="">
-    teensfjskfjsdl
+    <GameCard />
   </div>
 </template>
 

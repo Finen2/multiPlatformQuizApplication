@@ -1,6 +1,8 @@
 <template>
   <div class="">
-    fkslfksdlöfkdsölskfsöl
+    <router-link to="/mode" class="my-2">
+      <v-btn depressed >Back</v-btn>
+    </router-link>
     <router-view />
   </div>
 </template>
