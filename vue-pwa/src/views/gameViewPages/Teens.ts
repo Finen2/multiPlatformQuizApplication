@@ -15,10 +15,8 @@ export default {
   },
   async created(this: any){
     if (checkConnection()) {
-      console.log(onlineQuestions("teensQuestions"))
       this.questions.push(await onlineQuestions("teensQuestions"))
     }
     this.questions.push(localQuestions().teens.questions)
-    console.log(this.questions)
   }
 }

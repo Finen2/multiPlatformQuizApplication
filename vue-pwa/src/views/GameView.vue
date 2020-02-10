@@ -1,9 +1,9 @@
 <template>
-  <div class="">
+  <div class="flex-default gameNav">
     <router-link to="/mode" class="my-2">
-      <v-btn depressed >Back</v-btn>
+      <font-awesome-icon class="gameNav__icon" icon="arrow-left" />
     </router-link>
-    <router-view />
+    <router-view class="gameNav__window" />
   </div>
 </template>
 

@@ -4,13 +4,17 @@ export default {
     shownQuestion: '',
   }),
   props: {
-    question: {}
+    question: {},
+    title: '',
+    cardColor: '',
   },
   methods: {
     nextQuestion(this: any) {
-      // const myArray = this.question.kids;
-      // this.shownQuestion = myArray.questions[Math.floor(Math.random() * myArray.questions.length)].body;
-      console.log('Now the next question will be loaded')
+      let questionArrayTeen = this.question[Math.floor(Math.random() * this.question.length)];
+      this.shownQuestion = questionArrayTeen[Math.floor(Math.random() * questionArrayTeen.length)].body;
     },
   },
+  // mounted(this: any){
+  //   this.nextQuestion();
+  // }
 }

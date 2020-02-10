@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="">
-    <GameCard />
+    <GameCard :question="questions" title="Teen Questions" cardColor="#385F73"/>
   </div>
 </template>
 

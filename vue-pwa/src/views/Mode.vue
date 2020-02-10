@@ -1,9 +1,9 @@
 <template>
-  <v-row align="center" class="flex-center-evenly-column mode">
+  <v-row align="center" class="flex-default mode">
     <router-link to="/" class="my-2">
-      <v-btn depressed >Back</v-btn>
+      <font-awesome-icon class="icon" icon="arrow-left" />
     </router-link>
-    <v-col class="text-center" cols="12" sm="4">
+    <v-col class="text-center">
       <router-link to="/kids" class="my-2">
         <v-btn depressed large>Kids</v-btn>
       </router-link>
