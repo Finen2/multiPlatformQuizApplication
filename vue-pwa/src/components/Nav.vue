@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="">
+  <div class="nav">
     Navigation
   </div>
 </template>
